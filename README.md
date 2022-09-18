@@ -20,8 +20,11 @@ The `main` package contains the exercise that does the following:
 
 ### How to use it
 Run it with defaults:
+```
 % go run . 
-
+```
+Get usage:
+```
 % go run . -help                                                                        
 Usage :
 
@@ -33,9 +36,9 @@ Usage :
       (optional) namespace (default "aerospike")
   -podName string
       (optional) podName (default "helloworldpod")
-
+```
 Example run with flags:
-
+```
 % go run . -namespace aerospike -podName helloaerospike -labelSelector=k8s-app=kube-dns
 
   0. exit
@@ -78,5 +81,5 @@ Deleted Podname:helloaerospike in Namespace:aerospike
   7. extra credit - show how an client-go informer works
   8. run all
 Please enter a number from 0 to 8 :
-
+```
 
